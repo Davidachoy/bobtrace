@@ -14,7 +14,7 @@ The goal is to help software teams move from AI-assisted coding to AI-assisted d
 
 ## IBM Bob Usage
 
-IBM Bob is used across the software development lifecycle:
+IBM Bob will be used across the software development lifecycle:
 
 1. Discovery
 2. Planning
@@ -23,4 +23,17 @@ IBM Bob is used across the software development lifecycle:
 5. Security review
 6. Documentation
 
-All relevant IBM Bob exported task history markdown files and consumption summary screenshots are stored in the `bob_sessions` folder.
+All relevant IBM Bob exported task history markdown files and consumption summary screenshots will be stored in the `bob_sessions` folder.
+
+## Project Structure
+
+```text
+bobtrace/
+  frontend/
+  backend/
+  sample_data/
+  evidence/
+  bob_sessions/
+  README.md
+  LICENSE
+```
