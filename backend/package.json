@@ -1,0 +1,22 @@
+{
+  "name": "bobtrace-backend",
+  "version": "1.0.0",
+  "description": "BobTrace backend API for IBM Bob Dev Day Hackathon",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "ibm-bob",
+    "evidence",
+    "hackathon"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
