@@ -1,0 +1,114 @@
+.workflow-stages {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  height: fit-content;
+}
+
+.workflow-title {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stage-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.stage-item:hover {
+  background: #f9fafb;
+}
+
+.stage-item.selected {
+  background: #eff6ff;
+  border-color: #3b82f6;
+}
+
+.stage-indicator {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+}
+
+.stage-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d1d5db;
+}
+
+.stage-item.completed .stage-dot {
+  background: #10b981;
+}
+
+.stage-item.in-progress .stage-dot {
+  background: #f59e0b;
+}
+
+.stage-item.pending .stage-dot {
+  background: #d1d5db;
+}
+
+.stage-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.stage-phase {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.stage-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111827;
+  line-height: 1.3;
+}
+
+.stage-item.selected .stage-phase {
+  color: #2563eb;
+}
+
+.stage-item.selected .stage-name {
+  color: #1e40af;
+}
+
+@media (max-width: 968px) {
+  .workflow-stages {
+    margin-bottom: 20px;
+  }
+
+  .stage-list {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 8px;
+    padding-bottom: 4px;
+  }
+
+  .stage-item {
+    min-width: 200px;
+  }
+}
+
+/* Made with Bob */

@@ -1,0 +1,112 @@
+.risk-section {
+  margin-bottom: 24px;
+}
+
+.section-title {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.risk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.risk-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-left: 3px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.2s;
+}
+
+.risk-card:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.risk-card.severity-high {
+  border-left-color: #ef4444;
+  background: #fef2f2;
+}
+
+.risk-card.severity-medium {
+  border-left-color: #f59e0b;
+  background: #fffbeb;
+}
+
+.risk-card.severity-low {
+  border-left-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.risk-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.risk-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.3;
+}
+
+.severity-badge {
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.severity-badge.high {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.severity-badge.medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.severity-badge.low {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.risk-description {
+  margin: 0 0 12px 0;
+  font-size: 13px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.risk-mitigation {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.5;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.risk-mitigation strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .risk-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Made with Bob */
